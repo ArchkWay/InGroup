@@ -20,11 +20,11 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity implements AnyAdapter.Callback {
 
     AnyAdapter adapter = new AnyAdapter( this );//initiate variables
-    TextView tvIdApi = findViewById( R.id.tvIdApi );
-    TextView tvNameApp = findViewById( R.id.tvNameApp );
-    TextView tvInfoApp = findViewById( R.id.tvInfoApi );
+    TextView tvIdApi;
+    TextView tvNameApp;
+    TextView tvInfoApp;
 
-    RecyclerView recyclerView = findViewById(R.id.recyclerView);
+    RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
 
 
@@ -32,6 +32,11 @@ public class MainActivity extends AppCompatActivity implements AnyAdapter.Callba
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
+
+        tvIdApi = findViewById( R.id.tvIdApi );
+        tvNameApp = findViewById( R.id.tvNameApp );
+        tvInfoApp = findViewById( R.id.tvInfoApi );
+        recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(layoutManager);//instal recycler view, adapter, layout manager
         recyclerView.setAdapter(adapter);
 
