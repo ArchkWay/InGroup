@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/Back"
+            />
+
+        <ImageView
+            android:id="@+id/ivLogoExp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@id/btnBack"
+            />
+
+        <Button
+            android:id="@+id/btnGetExp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/get"
+            app:layout_constraintLeft_toRightOf="@id/ivLogoExp"
+            app:layout_constraintTop_toTopOf="@id/ivLogoExp"
+            />
+
+        <TextView
+            android:id="@+id/tvNameExp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ivLogoExp"
+            android:text="OFFER_NAME"
+            />
+
+        <TextView
+            android:id="@+id/tvFullDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/text_wall"
+            app:layout_constraintTop_toBottomOf="@id/tvNameExp"
+            />
+
+        <WebView
+            android:id="@+id/wvUrlExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tvFullDes"
+            android:text="www.GOOOOOOOGLE.COM"
+            />
+
+        <TextView
+            android:id="@+id/tvUrlExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tvFullDes"
+            android:text="www.GOOOOOOOGLE.COM"
+            />
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

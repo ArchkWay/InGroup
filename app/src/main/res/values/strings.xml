@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InGroup</string>
+    <string name="error">error</string>
+    <string name="get">Получить</string>
+    <string name="Back">Назад</string>
+    <string name="text_wall">На первом экране должны располагаться блоки с офферами в произвольном порядке, как Вам больше нравится, например так это просто пример, что бы была понятна суть, не надо к нему привязываться).</string>
+</resources>
